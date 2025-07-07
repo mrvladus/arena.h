@@ -16,7 +16,7 @@ int main() {
     // Create memory arena with the size of 14 bytes
     Arena* arena = arena_new(14);
     // Allocate buffer for string "Hello, World!" + NULL-terminator
-    void* buffer = arena_alloc(arena, 14);
+    char* buffer = arena_alloc(arena, 14);
     // Print string to buffer
     sprintf(buffer, "Hello, World!");
     // Print string to stdout
@@ -28,7 +28,7 @@ int main() {
     // Print string to stdout
     printf("%s\n", buffer);
     // Allocate more than arena size. It will interlally allocate new arena with bigger buffer.
-    void* buffer2 = arena_alloc(arena, 25);
+    char* buffer2 = arena_alloc(arena, 25);
     // Print string to buffer
     sprintf(buffer, "Hello, World! What's up?");
     // Print new string to stdout
