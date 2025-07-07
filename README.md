@@ -1,6 +1,6 @@
 # arena.h
 
-This header-only library is simple memory arena (linear allocator) implementation.
+Header-only memory arena for C/C++
 
 ## Usage
 
